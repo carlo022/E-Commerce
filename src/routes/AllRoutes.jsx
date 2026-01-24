@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import { HomePage, ProductList } from '../pages';
+import HomePage from '../pages/Home/HomePage.jsx';
+import ProductList from '../pages/Products/ProductList.jsx';
 
 export const AllRoutes = () => {
   return (

@@ -1,7 +1,13 @@
-export const HomePage = () => {
+import Hero  from './components/Hero.jsx';
+import ProductCard from '../../components/Elements/ProductCard.jsx';
+import Testimonials from './components/Testimonials.jsx';
+
+const HomePage = () => {
   return (
     <main>
-         <div>Home</div>
+         <Hero />
+         <ProductCard />
+         <Testimonials />
     </main>
   )
 };

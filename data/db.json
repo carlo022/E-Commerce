@@ -10,7 +10,8 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAuCY-Sd4qAOmR9RO-po53J6k0KTuQh4slng&s",
       "new": true,
       "sale": false,
-      "description": "Ergonomic wireless mouse with adjustable DPI and silent clicks."
+      "description": "Ergonomic wireless mouse with adjustable DPI and silent clicks.",
+      "long_description": "This wireless mouse offers an ergonomic design for comfortable use throughout the day. It features adjustable DPI settings for precise control and silent clicks, making it perfect for office environments. The mouse connects via a USB receiver and has a long battery life of up to 12 months."
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "image": "https://media.printables.com/media/prints/73567/images/797295_c33136da-5bc6-4a58-a11d-e40abdbff449/thumbs/inside/1280x960/jpg/img_7814.webp",
       "new": true,
       "sale": false,
-      "description": "RGB backlit mechanical keyboard with blue switches."
+      "description": "RGB backlit mechanical keyboard with blue switches.",
+      "long_description": "Experience the tactile feedback of blue switches with this RGB backlit mechanical keyboard. It features customizable lighting effects, anti-ghosting technology, and a durable build for long-lasting performance. The keyboard is compatible with both Windows and Mac operating systems and includes multimedia shortcut keys for easy access."
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOZ1mtOn9Edff4qxeVkGWzCHIbXVLMP6UBcg&s",
       "new": false,
       "sale": true,
-      "description": "Stainless steel insulated water bottle, 750ml."
+      "description": "Stainless steel insulated water bottle, 750ml.",
+      "long_description": "Keep your drinks hot or cold for hours with this stainless steel insulated water bottle. With a capacity of 750ml, it's perfect for staying hydrated on the go. The bottle features a leak-proof lid, sweat-free exterior, and is BPA-free for safe use. Ideal for outdoor activities, gym sessions, or daily commutes."
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "image": "https://techcrunch.com/wp-content/uploads/2016/12/credit-femsta.jpg?w=800",
       "new": false,
       "sale": false,
-      "description": "Lightweight running shoes with breathable mesh."
+      "description": "Lightweight running shoes with breathable mesh.",
+      "long_description": "These lightweight running shoes are designed for optimal performance and comfort. Featuring a breathable mesh upper, they provide excellent ventilation to keep your feet cool during workouts. The cushioned midsole offers superior shock absorption, while the durable outsole ensures traction on various surfaces. Perfect for runners of all levels."
     },
     {
       "id": 5,
@@ -58,7 +62,8 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQgcZX-oaTw4dIFShQF7KnMOJR9D2Z_eB2g&s",
       "new": false,
       "sale": true,
-      "description": "Portable Bluetooth speaker with deep bass and 12-hour battery life."
+      "description": "Portable Bluetooth speaker with deep bass and 12-hour battery life.",
+      "long_description": "Enjoy high-quality sound on the go with this portable Bluetooth speaker. It features deep bass, clear highs, and a balanced midrange for an immersive listening experience. The speaker has a 12-hour battery life, making it perfect for outdoor activities, parties, or travel. It also includes a built-in microphone for hands-free calls and is water-resistant for added durability."
     },
     {
       "id": 6,
@@ -70,7 +75,8 @@
       "image": "https://download-warehouse.sketchup.com/warehouse/v1.0/content/public/29b73d1d-1f83-478c-b324-9cc1f800d130",
       "new": false,
       "sale": true,
-      "description": "Non-slip yoga mat with carrying strap."
+      "description": "Non-slip yoga mat with carrying strap.",
+      "long_description": "Enhance your yoga practice with this non-slip yoga mat. Made from high-density foam, it provides excellent cushioning and support for various poses. The mat features a textured surface to prevent slipping, even during intense workouts. It comes with a convenient carrying strap for easy transport to and from your yoga sessions."
     },
     {
       "id": 7,
@@ -82,7 +88,8 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRidCdPSc4IthseD-BqybjAGv2YPC0HO8SvJA&s",
       "new": true,
       "sale": false,
-      "description": "Adjustable LED desk lamp with touch controls and USB charging port."
+      "description": "Adjustable LED desk lamp with touch controls and USB charging port.",
+      "long_description": "Illuminate your workspace with this adjustable LED desk lamp. It features touch controls for easy brightness adjustment and color temperature settings. The lamp includes a built-in USB charging port, allowing you to charge your devices conveniently while working. Its sleek design and energy-efficient LED technology make it a stylish and practical addition to any desk."
     },
     {
       "id": 8,
@@ -94,7 +101,8 @@
       "image": "https://plus.unsplash.com/premium_photo-1680346529160-549ad950bd1f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "new": false,
       "sale": false,
-      "description": "Over-ear noise-cancelling headphones with high-fidelity sound."
+      "description": "Over-ear noise-cancelling headphones with high-fidelity sound.",
+      "long_description": "Experience immersive sound with these over-ear noise-cancelling headphones. They feature advanced noise-cancelling technology to block out ambient noise, allowing you to focus on your music or calls. The headphones deliver high-fidelity sound with deep bass and clear highs. They also offer comfortable ear cushions and a long battery life of up to 20 hours for extended listening sessions."
     },
     {
       "id": 9,
@@ -106,7 +114,8 @@
       "image": "https://images.unsplash.com/photo-1718309602791-8f3cc83840b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "new": true,
       "sale": false,
-      "description": "Smartwatch with fitness tracking and customizable watch faces."
+      "description": "Smartwatch with fitness tracking and customizable watch faces.",
+      "long_description": "Stay connected and track your fitness goals with this versatile smartwatch. It features a range of health monitoring tools, including heart rate tracking, step counting, and sleep analysis. The smartwatch offers customizable watch faces to suit your style and preferences. It also provides notifications for calls, messages, and apps, ensuring you stay informed throughout the day."
     },
     {
       "id": 10,
@@ -118,7 +127,8 @@
       "image": "https://preview.free3d.com/img/2015/09/2272953695152899612/8op2gzwz.jpg",
       "new": false,
       "sale": true,
-      "description": "1.7L electric kettle with rapid boil and auto shut-off feature."
+      "description": "1.7L electric kettle with rapid boil and auto shut-off feature.",
+      "long_description": "Boil water quickly and safely with this 1.7L electric kettle. It features a rapid boil function that heats water in minutes, making it perfect for tea, coffee, and instant meals. The kettle includes an auto shut-off feature for added safety, preventing overheating and dry boiling. Its sleek design and stainless steel construction make it a stylish addition to any kitchen."
     },
     {
       "id": 11,
@@ -130,7 +140,8 @@
       "image": "https://cdn.thewirecutter.com/wp-content/media/2023/06/fitnesstrackers-2048px-09819-3x2-1.jpg?auto=webp&quality=75&crop=1:1,smart&width=1024",
       "new": true,
       "sale": false,
-      "description": "Water-resistant fitness tracker with heart rate monitor and sleep tracking."
+      "description": "Water-resistant fitness tracker with heart rate monitor and sleep tracking.",
+      "long_description": "Monitor your health and fitness with this water-resistant fitness tracker. It features a heart rate monitor, sleep tracking, and step counting to help you stay on top of your wellness goals. The tracker syncs with your smartphone to provide detailed insights and progress reports. Its sleek design and comfortable fit make it ideal for all-day wear."
     },
     {
       "id": 12,
@@ -142,7 +153,8 @@
       "image": "https://preview.free3d.com/img/2015/02/1720460613647337192/k9q4lo0t.jpg",
       "new": false,
       "sale": false,
-      "description": "Programmable coffee maker with 12-cup capacity and auto brew feature."
+      "description": "Programmable coffee maker with 12-cup capacity and auto brew feature.",
+      "long_description": "Brew the perfect cup of coffee with this programmable coffee maker. It features a 12-cup capacity and an auto brew function, allowing you to set a timer for fresh coffee in the morning. The coffee maker includes a removable filter basket for easy cleaning and a keep-warm function to maintain the ideal temperature. Its sleek design fits seamlessly into any kitchen decor."
     },
     {
       "id": 13,
@@ -154,7 +166,8 @@
       "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc4/RedMagic-Tablet-3D-Explorer-Edition.jpg",
       "new": true,
       "sale": false,
-      "description": "10-inch tablet with high-resolution display and long battery life."
+      "description": "10-inch tablet with high-resolution display and long battery life.",
+      "long_description": "Stay productive and entertained with this 10-inch tablet. It features a high-resolution display for crisp visuals and vibrant colors, making it perfect for streaming videos, browsing the web, and gaming. The tablet offers long battery life, allowing you to use it throughout the day without frequent recharging. It also includes ample storage and supports various apps for work and play."
     },
     {
       "id": 14,
@@ -166,7 +179,8 @@
       "image": "https://i.greatcatalog.net/v/59/59058/59058-588@2x.jpg",
       "new": false,
       "sale": true,
-      "description": "Adjustable dumbbell set with weights ranging from 5 to 50 lbs."
+      "description": "Adjustable dumbbell set with weights ranging from 5 to 50 lbs.",
+      "long_description": "Enhance your strength training routine with this adjustable dumbbell set. The set includes weights ranging from 5 to 50 lbs, allowing you to customize your workout intensity. The dumbbells feature a secure locking mechanism for safety and a comfortable grip for ease of use. Perfect for home workouts, this set provides versatility for various exercises targeting different muscle groups."
     },
     {
       "id": 15,
@@ -178,7 +192,8 @@
       "image": "https://preview.free3d.com/img/2023/02/3190264558316947343/7mtublre.jpg",
       "new": true,
       "sale": false,
-      "description": "HEPA air purifier with real-time air quality monitoring."
+      "description": "HEPA air purifier with real-time air quality monitoring.",
+      "long_description": "Improve indoor air quality with this HEPA air purifier. It features real-time air quality monitoring and a multi-stage filtration system that captures 99.97% of airborne particles, including dust, pollen, and pet dander. The purifier operates quietly and includes a timer function for convenient use. Its sleek design fits seamlessly into any room, providing clean and fresh air for you and your family."
     },
     {
       "id": 16,
@@ -190,7 +205,8 @@
       "image": "https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=2400/34244460/files/best-display-monitors-for-3d-artists-asusrog.png",
       "new": true,
       "sale": false,
-      "description": "27-inch gaming monitor with 144Hz refresh rate and 1ms response time."
+      "description": "27-inch gaming monitor with 144Hz refresh rate and 1ms response time.",
+      "long_description": "Experience smooth and immersive gaming with this 27-inch gaming monitor. It features a 144Hz refresh rate and a 1ms response time, reducing motion blur and providing a competitive edge in fast-paced games. The monitor supports Full HD resolution for crisp visuals and vibrant colors. It also includes multiple connectivity options, including HDMI and DisplayPort, for easy setup with your gaming rig."
     }
   ],
   "featured_products": [
@@ -204,7 +220,8 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAuCY-Sd4qAOmR9RO-po53J6k0KTuQh4slng&s",
       "new": true,
       "sale": false,
-      "description": "Ergonomic wireless mouse with adjustable DPI and silent clicks."
+      "description": "Ergonomic wireless mouse with adjustable DPI and silent clicks.",
+      "long_description": "This wireless mouse offers an ergonomic design for comfortable use throughout the day. It features adjustable DPI settings for precise control and silent clicks, making it perfect for office environments. The mouse connects via a USB receiver and has a long battery life of up to 12 months."
     },
     {
       "id": 5,
@@ -216,7 +233,8 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQgcZX-oaTw4dIFShQF7KnMOJR9D2Z_eB2g&s",
       "new": true,
       "sale": false,
-      "description": "Portable Bluetooth speaker with deep bass and 12-hour battery life."
+      "description": "Portable Bluetooth speaker with deep bass and 12-hour battery life.",
+      "long_description": "Enjoy high-quality sound on the go with this portable Bluetooth speaker. It features deep bass, clear highs, and a balanced midrange for an immersive listening experience. The speaker has a 12-hour battery life, making it perfect for outdoor activities, parties, or travel. It also includes a built-in microphone for hands-free calls and is water-resistant for added durability."
     },
     {
       "id": 7,
@@ -228,7 +246,8 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRidCdPSc4IthseD-BqybjAGv2YPC0HO8SvJA&s",
       "new": true,
       "sale": false,
-      "description": "Adjustable LED desk lamp with touch controls and USB charging port."
+      "description": "Adjustable LED desk lamp with touch controls and USB charging port.",
+      "long_description": "Illuminate your workspace with this adjustable LED desk lamp. It features touch controls for easy brightness adjustment and color temperature settings. The lamp includes a built-in USB charging port, allowing you to charge your devices conveniently while working. Its sleek design and energy-efficient LED technology make it a stylish and practical addition to any desk."
     }
   ],
   "orders": [

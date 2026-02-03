@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
-import ProductCard from "../../components/Elements/ProductCard.jsx";
+import { ProductCard } from "../../components";
 import FilterBar from "./components/FilterBar.jsx";
 
 
@@ -41,5 +41,3 @@ export const ProductList = () => {
     </div>
   )
 }
-
-export default ProductList

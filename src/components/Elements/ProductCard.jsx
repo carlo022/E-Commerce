@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({product}) => {
+export const ProductCard = ({product}) => {
  const {id,name, image, price, new: isNew, description, sale: isSale} = product;
 
   return (
@@ -27,5 +27,3 @@ const ProductCard = ({product}) => {
     </div>
   );
 }
-
-export default ProductCard

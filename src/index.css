@@ -1,5 +1,27 @@
-@import "tailwindcss"; 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+/* Step 2a: Define the dark mode variant */
+/* This tells Tailwind to trigger 'dark:' classes when a '.dark' class is on the <html> element */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Step 2b: (Optional) Define theme variables for easier maintenance */
+@theme {
+  --color-brand-bg: white;
+  --color-brand-text: #1a1a1a;
+}
+
+/* Step 2c: Apply dark mode overrides using the variant */
+@layer base {
+  .dark {
+    --color-brand-bg: #121212;
+    --color-brand-text: #f5f5f5;
+  }
+  
+  body {
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
 
 * {
     font-family: 'Roboto', sans-serif;

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Wireless Mouse",
-      "price": 599.00,
+      "price": 599,
       "category": "Electronics",
       "stock": 25,
       "In_stock": false,
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "name": "Mechanical Keyboard",
-      "price": 2499.00,
+      "price": 2499,
       "category": "Electronics",
       "stock": 15,
       "In_stock": true,
@@ -29,7 +29,7 @@
     {
       "id": 3,
       "name": "Water Bottle",
-      "price": 199.00,
+      "price": 199,
       "category": "Home & Kitchen",
       "stock": 50,
       "In_stock": true,
@@ -42,7 +42,7 @@
     {
       "id": 4,
       "name": "Running Shoes",
-      "price": 3299.00,
+      "price": 3299,
       "category": "Sportswear",
       "stock": 10,
       "In_stock": true,
@@ -55,7 +55,7 @@
     {
       "id": 5,
       "name": "Bluetooth Speaker",
-      "price": 1499.00,
+      "price": 1499,
       "category": "Electronics",
       "stock": 20,
       "In_stock": true,
@@ -68,7 +68,7 @@
     {
       "id": 6,
       "name": "Yoga Mat",
-      "price": 799.00,
+      "price": 799,
       "category": "Sportswear",
       "stock": 30,
       "In_stock": false,
@@ -81,7 +81,7 @@
     {
       "id": 7,
       "name": "LED Desk Lamp",
-      "price": 1299.00,
+      "price": 1299,
       "category": "Home & Kitchen",
       "stock": 18,
       "In_stock": true,
@@ -94,7 +94,7 @@
     {
       "id": 8,
       "name": "Noise-Cancelling Headphones",
-      "price": 4999.00,
+      "price": 4999,
       "category": "Electronics",
       "stock": 12,
       "In_stock": true,
@@ -107,7 +107,7 @@
     {
       "id": 9,
       "name": "Smartwatch",
-      "price": 2999.00,
+      "price": 2999,
       "category": "Electronics",
       "stock": 22,
       "In_stock": false,
@@ -120,7 +120,7 @@
     {
       "id": 10,
       "name": "Electric Kettle",
-      "price": 2199.00,
+      "price": 2199,
       "category": "Home & Kitchen",
       "stock": 16,
       "In_stock": true,
@@ -133,7 +133,7 @@
     {
       "id": 11,
       "name": "Fitness Tracker",
-      "price": 1599.00,
+      "price": 1599,
       "category": "Sportswear",
       "stock": 28,
       "In_stock": true,
@@ -146,7 +146,7 @@
     {
       "id": 12,
       "name": "Coffee Maker",
-      "price": 3499.00,
+      "price": 3499,
       "category": "Home & Kitchen",
       "stock": 14,
       "In_stock": true,
@@ -159,7 +159,7 @@
     {
       "id": 13,
       "name": "Tablet",
-      "price": 8999.00,
+      "price": 8999,
       "category": "Electronics",
       "stock": 8,
       "In_stock": true,
@@ -172,7 +172,7 @@
     {
       "id": 14,
       "name": "Dumbbell Set",
-      "price": 2599.00,
+      "price": 2599,
       "category": "Sportswear",
       "stock": 11,
       "In_stock": true,
@@ -185,7 +185,7 @@
     {
       "id": 15,
       "name": "Air Purifier",
-      "price": 4299.00,
+      "price": 4299,
       "category": "Home & Kitchen",
       "stock": 9,
       "In_stock": true,
@@ -198,7 +198,7 @@
     {
       "id": 16,
       "name": "Gaming Monitor",
-      "price": 15999.00,
+      "price": 15999,
       "category": "Electronics",
       "stock": 7,
       "In_stock": true,
@@ -213,7 +213,7 @@
     {
       "id": 1,
       "name": "Wireless Mouse",
-      "price": 599.00,
+      "price": 599,
       "category": "Electronics",
       "stock": 25,
       "In_stock": true,
@@ -226,7 +226,7 @@
     {
       "id": 5,
       "name": "Bluetooth Speaker",
-      "price": 1499.00,
+      "price": 1499,
       "category": "Electronics",
       "stock": 20,
       "In_stock": true,
@@ -239,7 +239,7 @@
     {
       "id": 7,
       "name": "LED Desk Lamp",
-      "price": 1299.00,
+      "price": 1299,
       "category": "Home & Kitchen",
       "stock": 18,
       "In_stock": true,
@@ -250,11 +250,19 @@
       "long_description": "Illuminate your workspace with this adjustable LED desk lamp. It features touch controls for easy brightness adjustment and color temperature settings. The lamp includes a built-in USB charging port, allowing you to charge your devices conveniently while working. Its sleek design and energy-efficient LED technology make it a stylish and practical addition to any desk."
     }
   ],
-  "orders": [
-
-  ],
+  "orders": [],
   "users": [
-
+    {
+      "email": "juan@example.com",
+      "password": "$2a$10$DdimUyycUOnioDDpPMseCOzuiGnN8C/pLbH1E/Ml705gjMLNY7eFm",
+      "name": "juan dela cruz",
+      "id": 1
+    },
+    {
+      "email": "juan_carlos@example.com",
+      "password": "$2a$10$gj2I/uUNdbaRoWHQfDgg..OTFNrcB/QJhd/4WS/DUXF2wvLRrHAiC",
+      "name": "juan carlos",
+      "id": 2
+    }
   ]
 }
-

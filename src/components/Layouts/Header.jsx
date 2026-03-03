@@ -5,10 +5,15 @@ import { Search } from "../Sections/Search";
 import { useEffect } from "react";
 import { DropdownLoggedOut } from "../Elements/DropdownLoggedOut";
 import { useOutsideClick } from "../../hooks/UseOutsideClicked";
+import { DropdownLoggedIn } from "../Elements/DropdownLoggedIn";
 
 export const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+
+  const Token = JSON.parse((sessionStorage.getItem("token")));
+  console.log(Token);
+
   // 1. Initialize the hook with the action you want to take
   const dropdownref = useOutsideClick(() => setShowDropdown(false));
   const searchref = useOutsideClick(() => setShowSearch(false));
@@ -49,7 +54,7 @@ export const Header = () => {
                     </span>                    
                   </Link>
                   <span onClick={() => setShowDropdown(!showDropdown)} className="bi bi-person-circle cursor-pointer text-2xl text-gray-700 dark:text-white"></span>
-                  {showDropdown && <DropdownLoggedOut />}
+                  {showDropdown && (Token ? <DropdownLoggedIn /> : <DropdownLoggedOut/>)}
               </div>
           </div>
       </nav>

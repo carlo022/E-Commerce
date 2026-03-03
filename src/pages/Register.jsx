@@ -1,4 +1,8 @@
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+
 export const Register = () => {
+  const navigate = useNavigate();
   async function handleRegister(e) {
     e.preventDefault();
     const authDetails = {
@@ -17,7 +21,17 @@ export const Register = () => {
 
     const response = await fetch("http://localhost:8000/register", requestOptions);
     const data = await response.json()
+    data.accessToken ? (navigate("/products"), toast.success(data)) : toast.error(data);
     console.log(data);
+
+      if(data.accessToken) {
+         // Decode JWT to get user ID
+           const decodedToken = JSON.parse(atob(data.accessToken.split('.')[1]));
+           const userId = decodedToken.sub; // "3" in your case
+  
+            sessionStorage.setItem("token", JSON.stringify(data.accessToken));
+            sessionStorage.setItem("shopperid", userId);
+           }
   };
 
 

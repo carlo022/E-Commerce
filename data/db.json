@@ -263,6 +263,12 @@
       "password": "$2a$10$gj2I/uUNdbaRoWHQfDgg..OTFNrcB/QJhd/4WS/DUXF2wvLRrHAiC",
       "name": "juan carlos",
       "id": 2
+    },
+    {
+      "email": "juan@gmail.com",
+      "password": "$2a$10$8PMKJvjVrIC.0x1LuZfrL.R8kkQXFVI6Rfd6fUKrn8r3aFL9usiwy",
+      "name": "juan juan",
+      "id": 3
     }
   ]
 }

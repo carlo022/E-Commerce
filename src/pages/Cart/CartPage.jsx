@@ -1,12 +1,13 @@
 import { CartEmpty } from "./components/CartEmpty";
 import { CartList } from "./components/CardList";
+import { useCart } from "../../context";
 
 export const CartPage = () => {
-  const cartlistLength = 0;
+  const { cartList } = useCart();
 
   return (
-    <main>       
-      { cartlistLength ? <CartList /> : <CartEmpty /> }   
-    </main>
+    <div className="min-h-screen py-10">       
+      { cartList.length ? <CartList /> : <CartEmpty /> }   
+    </div>
   )
 }

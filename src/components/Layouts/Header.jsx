@@ -6,8 +6,10 @@ import { useEffect } from "react";
 import { DropdownLoggedOut } from "../Elements/DropdownLoggedOut";
 import { useOutsideClick } from "../../hooks/UseOutsideClicked";
 import { DropdownLoggedIn } from "../Elements/DropdownLoggedIn";
+import { useCart } from "../../context";
 
 export const Header = () => {
+  const {cartList} = useCart();
   const [showSearch, setShowSearch] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -50,7 +52,7 @@ export const Header = () => {
                   <span onClick={() => setShowSearch(!showSearch)} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-search"></span>
                   <Link to="/cart" className="text-gray-700 dark:text-white mr-5">
                     <span className="text-2xl bi bi-cart-fill relative">
-                      <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">0</span>
+                      <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">{cartList.length}</span>
                     </span>                    
                   </Link>
                   <span onClick={() => setShowDropdown(!showDropdown)} className="bi bi-person-circle cursor-pointer text-2xl text-gray-700 dark:text-white"></span>

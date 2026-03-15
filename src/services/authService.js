@@ -1,3 +1,5 @@
+import {API_URL} from "../api";
+
 export async function login(authDetails) {
     const requestOptions = {
       method: "POST",
@@ -6,7 +8,7 @@ export async function login(authDetails) {
       },
       body: JSON.stringify(authDetails)
     }
-      const response = await fetch("http://localhost:8000/login", requestOptions);
+      const response = await fetch(`${API_URL}/login`, requestOptions);
       const data = await response.json();
       if(data.accessToken) {
          // Decode JWT to get user ID
@@ -32,7 +34,7 @@ export async function register(authdetails) {
       body: JSON.stringify(authdetails)
     }
 
-    const response = await fetch("http://localhost:8000/register", requestOptions);
+    const response = await fetch(`${API_URL}/register`, requestOptions);
     const data = await response.json()
 
       if(data.accessToken) {

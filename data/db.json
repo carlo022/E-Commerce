@@ -1686,6 +1686,33 @@
       "quantity": 1,
       "date": "2026-03-13T16:06:34.151Z",
       "id": 34
+    },
+    {
+      "user": {
+        "name": "juan juan",
+        "email": "juan@gmail.com",
+        "id": 3
+      },
+      "cartList": [
+        {
+          "id": 5,
+          "name": "Bluetooth Speaker",
+          "price": 1499,
+          "category": "Electronics",
+          "stock": 20,
+          "In_stock": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQgcZX-oaTw4dIFShQF7KnMOJR9D2Z_eB2g&s",
+          "new": false,
+          "sale": true,
+          "description": "Portable Bluetooth speaker with deep bass and 12-hour battery life.",
+          "long_description": "Enjoy high-quality sound on the go with this portable Bluetooth speaker. It features deep bass, clear highs, and a balanced midrange for an immersive listening experience. The speaker has a 12-hour battery life, making it perfect for outdoor activities, parties, or travel. It also includes a built-in microphone for hands-free calls and is water-resistant for added durability.",
+          "quantity": 1
+        }
+      ],
+      "amount_paid": 1499,
+      "quantity": 1,
+      "date": "2026-03-15T08:46:01.706Z",
+      "id": 35
     }
   ],
   "users": [

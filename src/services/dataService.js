@@ -1,3 +1,5 @@
+import {API_URL} from "../api";
+
 export async function getUser() {
     const token = JSON.parse(sessionStorage.getItem("token"));
     const shopperId = JSON.parse(sessionStorage.getItem("shopperid"));
@@ -9,7 +11,7 @@ export async function getUser() {
                 "Authorization": `Bearer ${token}`}
                      
             }
-        const response = await fetch(`http://localhost:8000/600/users/${shopperId}`, requestOptions);
+        const response = await fetch(`${API_URL}/600/users/${shopperId}`, requestOptions);
         const data = await response.json();
         return data;
 }
@@ -25,7 +27,7 @@ export async function getUserOrder() {
                     "Authorization": `Bearer ${token}`
                 }
             }
-         const response = await fetch(`http://localhost:8000/660/orders?user.id=${shopperId}`, requestOptions);
+         const response = await fetch(`${API_URL}/660/orders?user.id=${shopperId}`, requestOptions);
             const data = await response.json();
             return data;
 
@@ -47,7 +49,7 @@ export async function createOrder(cartList, total, user) {
             quantity: cartList.length,
             date: new Date().toISOString()
         }
-        const response = await fetch("http://localhost:8000/660/orders", {
+        const response = await fetch(`${API_URL}/660/orders`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "server": "json-server-auth data/db.json -r data/routes.json --port 8000",
+    "server": "json-server-auth backend/data/db.json -r backend/data/routes.json --port 8000",
     "lint": "eslint .",
     "preview": "vite preview"
   },

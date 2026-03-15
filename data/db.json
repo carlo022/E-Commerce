@@ -1562,6 +1562,130 @@
       "quantity": 2,
       "date": "2026-03-08T14:42:00.979Z",
       "id": 32
+    },
+    {
+      "user": {
+        "name": "juan juan",
+        "email": "juan@gmail.com",
+        "id": 3
+      },
+      "cartList": [
+        {
+          "id": 2,
+          "name": "Mechanical Keyboard",
+          "price": 2499,
+          "category": "Electronics",
+          "stock": 15,
+          "In_stock": true,
+          "image": "https://media.printables.com/media/prints/73567/images/797295_c33136da-5bc6-4a58-a11d-e40abdbff449/thumbs/inside/1280x960/jpg/img_7814.webp",
+          "new": true,
+          "sale": false,
+          "description": "RGB backlit mechanical keyboard with blue switches.",
+          "long_description": "Experience the tactile feedback of blue switches with this RGB backlit mechanical keyboard. It features customizable lighting effects, anti-ghosting technology, and a durable build for long-lasting performance. The keyboard is compatible with both Windows and Mac operating systems and includes multimedia shortcut keys for easy access.",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "Water Bottle",
+          "price": 199,
+          "category": "Home & Kitchen",
+          "stock": 50,
+          "In_stock": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOZ1mtOn9Edff4qxeVkGWzCHIbXVLMP6UBcg&s",
+          "new": false,
+          "sale": true,
+          "description": "Stainless steel insulated water bottle, 750ml.",
+          "long_description": "Keep your drinks hot or cold for hours with this stainless steel insulated water bottle. With a capacity of 750ml, it's perfect for staying hydrated on the go. The bottle features a leak-proof lid, sweat-free exterior, and is BPA-free for safe use. Ideal for outdoor activities, gym sessions, or daily commutes.",
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "name": "Bluetooth Speaker",
+          "price": 1499,
+          "category": "Electronics",
+          "stock": 20,
+          "In_stock": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQgcZX-oaTw4dIFShQF7KnMOJR9D2Z_eB2g&s",
+          "new": false,
+          "sale": true,
+          "description": "Portable Bluetooth speaker with deep bass and 12-hour battery life.",
+          "long_description": "Enjoy high-quality sound on the go with this portable Bluetooth speaker. It features deep bass, clear highs, and a balanced midrange for an immersive listening experience. The speaker has a 12-hour battery life, making it perfect for outdoor activities, parties, or travel. It also includes a built-in microphone for hands-free calls and is water-resistant for added durability.",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Running Shoes",
+          "price": 3299,
+          "category": "Sportswear",
+          "stock": 10,
+          "In_stock": true,
+          "image": "https://techcrunch.com/wp-content/uploads/2016/12/credit-femsta.jpg?w=800",
+          "new": false,
+          "sale": false,
+          "description": "Lightweight running shoes with breathable mesh.",
+          "long_description": "These lightweight running shoes are designed for optimal performance and comfort. Featuring a breathable mesh upper, they provide excellent ventilation to keep your feet cool during workouts. The cushioned midsole offers superior shock absorption, while the durable outsole ensures traction on various surfaces. Perfect for runners of all levels.",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "name": "LED Desk Lamp",
+          "price": 1299,
+          "category": "Home & Kitchen",
+          "stock": 18,
+          "In_stock": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRidCdPSc4IthseD-BqybjAGv2YPC0HO8SvJA&s",
+          "new": true,
+          "sale": false,
+          "description": "Adjustable LED desk lamp with touch controls and USB charging port.",
+          "long_description": "Illuminate your workspace with this adjustable LED desk lamp. It features touch controls for easy brightness adjustment and color temperature settings. The lamp includes a built-in USB charging port, allowing you to charge your devices conveniently while working. Its sleek design and energy-efficient LED technology make it a stylish and practical addition to any desk.",
+          "quantity": 1
+        },
+        {
+          "id": 8,
+          "name": "Noise-Cancelling Headphones",
+          "price": 4999,
+          "category": "Electronics",
+          "stock": 12,
+          "In_stock": true,
+          "image": "https://plus.unsplash.com/premium_photo-1680346529160-549ad950bd1f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "new": false,
+          "sale": false,
+          "description": "Over-ear noise-cancelling headphones with high-fidelity sound.",
+          "long_description": "Experience immersive sound with these over-ear noise-cancelling headphones. They feature advanced noise-cancelling technology to block out ambient noise, allowing you to focus on your music or calls. The headphones deliver high-fidelity sound with deep bass and clear highs. They also offer comfortable ear cushions and a long battery life of up to 20 hours for extended listening sessions.",
+          "quantity": 1
+        }
+      ],
+      "amount_paid": 13794,
+      "quantity": 6,
+      "date": "2026-03-12T14:16:29.983Z",
+      "id": 33
+    },
+    {
+      "user": {
+        "name": "juan juan",
+        "email": "juan@gmail.com",
+        "id": 3
+      },
+      "cartList": [
+        {
+          "id": 3,
+          "name": "Water Bottle",
+          "price": 199,
+          "category": "Home & Kitchen",
+          "stock": 50,
+          "In_stock": true,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOZ1mtOn9Edff4qxeVkGWzCHIbXVLMP6UBcg&s",
+          "new": false,
+          "sale": true,
+          "description": "Stainless steel insulated water bottle, 750ml.",
+          "long_description": "Keep your drinks hot or cold for hours with this stainless steel insulated water bottle. With a capacity of 750ml, it's perfect for staying hydrated on the go. The bottle features a leak-proof lid, sweat-free exterior, and is BPA-free for safe use. Ideal for outdoor activities, gym sessions, or daily commutes.",
+          "quantity": 1
+        }
+      ],
+      "amount_paid": 199,
+      "quantity": 1,
+      "date": "2026-03-13T16:06:34.151Z",
+      "id": 34
     }
   ],
   "users": [

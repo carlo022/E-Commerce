@@ -1,11 +1,16 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { login } from "../services";
+import { Usetitle } from "../hooks/Usetitle.jsx";
 
 export const Login = () => {
   const email = useRef();
   const password = useRef();
   const navigate = useNavigate();
+
+  Usetitle("Login");
+
 
     async function handleLogin(e) {
       e.preventDefault();
@@ -13,26 +18,12 @@ export const Login = () => {
         email: email.current.value,
         password: password.current.value
       }
-      const requestOptions = {
-      method: "POST",
-      headers: {
-        "content-Type": "application/json"
-      },
-      body: JSON.stringify(authDetails)
-    }
-      const response = await fetch("http://localhost:8000/login", requestOptions);
-      const data = await response.json();
+      try {
+      const data = await login(authDetails);
       data.accessToken ? (navigate("/products"), toast.success(data)) : toast.error(data, {position: "top-center"});
-      console.log(data);
-
-      if(data.accessToken) {
-         // Decode JWT to get user ID
-           const decodedToken = JSON.parse(atob(data.accessToken.split('.')[1]));
-           const userId = decodedToken.sub; // "3" in your case
-  
-            sessionStorage.setItem("token", JSON.stringify(data.accessToken));
-            sessionStorage.setItem("shopperid", userId);
-           }
+      } catch (error) {
+        toast.error("Credentials not found", {position: "top-center"} );
+      }
     }
 
   return (

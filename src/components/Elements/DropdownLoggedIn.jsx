@@ -1,16 +1,30 @@
 import { Link } from "react-router-dom";
+import { logout } from "../../services";
+import { useEffect } from "react";
+import { getUser } from "../../services";
+import { useState } from "react";
 
 export const DropdownLoggedIn = ({setShowDropdown}) => {
 
+    const [user, setUser] = useState({});
+
+    useEffect(() => {
+        
+        async function fetchData() {
+            const data = await getUser();
+            data.email ? setUser(data) : handleLogout()
+        }
+        fetchData();
+        }, []);
+
     const handleLogout = () => {
-        sessionStorage.clear();
-        window.location.href = "/login";
+        logout();
     }
 
   return (
     <div id="dropdownAvatar" className="select-none	absolute top-10 right-0 z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
         <div className="py-3 px-4 text-sm text-gray-900 dark:text-white">
-            <div className="font-medium truncate">Carlolalas4@gmail.com</div>
+            <div className="font-medium truncate">{user.email}</div>
         </div>
         <ul className="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
             <li>

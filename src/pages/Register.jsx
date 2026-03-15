@@ -1,5 +1,7 @@
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { register } from "../services";
+import { Usetitle } from "../hooks/Usetitle.jsx";
 
 export const Register = () => {
   const navigate = useNavigate();
@@ -10,30 +12,10 @@ export const Register = () => {
       email: e.target.email.value,
       password: e.target.password.value
     }
-
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "content-Type": "application/json"
-      },
-      body: JSON.stringify(authDetails)
-    }
-
-    const response = await fetch("http://localhost:8000/register", requestOptions);
-    const data = await response.json()
+    const data = await register(authDetails);
     data.accessToken ? (navigate("/products"), toast.success(data)) : toast.error(data);
-    console.log(data);
-
-      if(data.accessToken) {
-         // Decode JWT to get user ID
-           const decodedToken = JSON.parse(atob(data.accessToken.split('.')[1]));
-           const userId = decodedToken.sub; // "3" in your case
-  
-            sessionStorage.setItem("token", JSON.stringify(data.accessToken));
-            sessionStorage.setItem("shopperid", userId);
-           }
   };
-
+  Usetitle("Register");
 
   return (
     <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto my-10"> 

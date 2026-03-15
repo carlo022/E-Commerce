@@ -5,6 +5,8 @@ import { ProductCard } from "../../components";
 import FilterBar from "./components/FilterBar.jsx";
 import { Usetitle } from '../../hooks/Usetitle.jsx';
 import { useFilter } from '../../context/FilterContext.jsx';
+import { getProductlist } from '../../services';
+import { toast } from 'react-toastify';
 
 
 export const ProductList = () => {
@@ -17,13 +19,14 @@ const { searchQuery, category, sortBy, sale, new: isNew, instock } = useFilter()
 
 useEffect(() => {
   async function fetchProducts() {
-try {
-      const response = await fetch("http://localhost:8000/products");
-      const data = await response.json();
-      setProducts(data);
-     // console.log(data);
+    try {
+    const data = await getProductlist();
+    setProducts(data);
     } catch (error) {
-      console.error("Error fetching products:", error);
+      toast.error("Failed to fetch products. Please try again later.", {
+        position: "top-right",
+        autoClose: 3000,
+      });
     }
   }
 

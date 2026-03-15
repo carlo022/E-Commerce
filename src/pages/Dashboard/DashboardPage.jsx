@@ -2,26 +2,20 @@ import { useEffect } from "react";
 import { DashboardCard } from "./component/DashboardCard";
 import { DashboardEmpty } from "./component/DashboardEmpty";
 import { useState } from "react";
+import { getUserOrder } from "../../services";
+import { Usetitle } from "../../hooks/Usetitle.jsx";
 
 export const DashboardPage = () => {
+  Usetitle("Dashboard - My Orders");
 
     const [orders, setOrders] = useState([]);
-    const token = JSON.parse(sessionStorage.getItem("token"));
-    const shopperId = JSON.parse(sessionStorage.getItem("shopperid"));
   
     useEffect(() => {
-            async function fetchOrders() { 
-            const response = await fetch(`http://localhost:8000/660/orders?user.id=${shopperId}`, {
-                method: "GET",
-                headers: {
-                    "content-Type": "application/json",
-                    "Authorization": `Bearer ${token}`
-                }
-            });
-            const data = await response.json();
-            setOrders(data);
-        }
-        fetchOrders();
+      async function fetchData() {
+        const data = await getUserOrder();
+        setOrders(data);
+      }
+      fetchData();
     }, []);
 
   return (

@@ -1,15 +1,23 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { ProductCard } from "../../../components";
+import { getFeaturedlist } from '../../../services';
+import { toast } from 'react-toastify';
 
 const FeaturedProducts = () => {
  const [FeaturedProducts, SetFeaturedProducts] = useState([]);
 
   useEffect(() => {
-    async function fetchFeaturedProducts(){
-      const response = await fetch("http://localhost:8000/featured_products");
-      const data = await response.json()
+    async function fetchFeaturedProducts() {
+      try {
+      const data = await getFeaturedlist();
       SetFeaturedProducts(data);
+      } catch (error) {
+        toast.error("Failed to load featured products. Please try again later.", {
+          position: "top-right",
+          autoClose: 3000,
+        });
+      }
     }
     fetchFeaturedProducts();
   }, [])

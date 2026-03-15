@@ -1,29 +1,20 @@
 import { use, useEffect, useState } from "react";
 import { useCart } from "../../../context/CartContext";
 import { useNavigate } from "react-router-dom";
-
+import { getUser, createOrder } from "../../../services";
 
 export const Checkout = ({setCheckout}) => {
     const navigate = useNavigate();
     const {total, cartList, clearCart} = useCart();
     const [user, setUser] = useState("");
-    const token = JSON.parse(sessionStorage.getItem("token"));
-    const shopperId = JSON.parse(sessionStorage.getItem("shopperid"));
     
     useEffect(() => {
 
-        async function getUser() { 
-            const response = await fetch(`http://localhost:8000/600/users/${shopperId}`, {
-                method: "GET",
-                headers: {
-                    "content-Type": "application/json",
-                    "Authorization": `Bearer ${token}`
-                }
-            });
-            const data = await response.json();
+        async function fetchData() { 
+            const data = await getUser();
             setUser(data);
         }
-        getUser();
+        fetchData();
     }, []);
 
     async function handleOrderSubmit(e) {
@@ -31,26 +22,7 @@ export const Checkout = ({setCheckout}) => {
 
         
      try{
-        const order = {
-            user: {
-                name: user.name,
-                email: user.email,
-                id: shopperId
-            },
-            cartList: cartList,
-            amount_paid: total,
-            quantity: cartList.length,
-            date: new Date().toISOString()
-        }
-        const response = await fetch("http://localhost:8000/660/orders", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
-            },
-            body: JSON.stringify(order)
-        });
-        const data = await response.json();
+        const data = await createOrder(cartList, total, user);
         clearCart();
             navigate("/order-summary", { state: { data: data, status: true } });
         } catch (error) {

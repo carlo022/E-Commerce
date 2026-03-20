@@ -13,7 +13,7 @@ export const ProductDetails = () => {
  Usetitle(productinfo.name);
    useEffect(() => {
      async function fetchProduct(){
-       const response = await fetch(`http://localhost:8000/444/products`);
+       const response = await fetch(`${import.meta.env.VITE_API_HOST}/444/products`);
        const data = await response.json()
        setProductinfo(data.find(p => p.id === parseInt(id)));
      }

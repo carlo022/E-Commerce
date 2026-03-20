@@ -1,4 +1,3 @@
-import {API_URL} from "../api";
 
 export async function login(authDetails) {
     const requestOptions = {
@@ -8,7 +7,7 @@ export async function login(authDetails) {
       },
       body: JSON.stringify(authDetails)
     }
-      const response = await fetch(`${API_URL}/login`, requestOptions);
+      const response = await fetch(`${import.meta.env.VITE_API_HOST}/login`, requestOptions);
       const data = await response.json();
       if(data.accessToken) {
          // Decode JWT to get user ID
@@ -34,7 +33,7 @@ export async function register(authdetails) {
       body: JSON.stringify(authdetails)
     }
 
-    const response = await fetch(`${API_URL}/register`, requestOptions);
+    const response = await fetch(`${import.meta.env.VITE_API_HOST}/register`, requestOptions);
     const data = await response.json()
 
       if(data.accessToken) {

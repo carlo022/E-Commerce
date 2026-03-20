@@ -250,8 +250,13 @@
       "long_description": "Illuminate your workspace with this adjustable LED desk lamp. It features touch controls for easy brightness adjustment and color temperature settings. The lamp includes a built-in USB charging port, allowing you to charge your devices conveniently while working. Its sleek design and energy-efficient LED technology make it a stylish and practical addition to any desk."
     }
   ],
-  "orders": [
-  ],
+  "orders": [],
   "users": [
+    {
+      "email": "juan@gmail.com",
+      "password": "$2a$10$yQJCLvJu9w27a653LkYGdumPiu6Y5A1413fg3B4TWSzLadqUaS2uK",
+      "name": "Juan Carlos",
+      "id": 1
+    }
   ]
 }

@@ -26,6 +26,22 @@ export const Login = () => {
       }
     }
 
+    async function handleLoginGuest(){
+      email.current.value = "juan@gmail.com";
+      password.current.value = "juanjuan123";
+
+      try{
+      const authDetails = {
+        email: email.current.value,
+        password: password.current.value
+      }
+      const data = await login(authDetails);
+      data.accessToken ? (navigate("/products"), toast.success(data)) : toast.error(data, {position: "top-center"});
+      }catch (error){
+        toast.error("Credentials not found", {position: "top-center"} );
+      }
+    }
+
   return (
     <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mx-auto my-10"  >
       <section>
@@ -43,7 +59,7 @@ export const Login = () => {
           <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Log In</button>
           <button onClick={() => navigate("/register")} className="ml-3 text-sm text-gray-500 dark:text-gray-400 hover:underline">Don't have an account?</button>
         </form>
-        {/* <button className="mt-3 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login As Guest</button> */}
+        <button onClick={handleLoginGuest} className="mt-3 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-3 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login As Guest</button>
     </div>
   )
 }

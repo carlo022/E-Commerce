@@ -40,7 +40,7 @@ export const ProductCard = ({product}) => {
             <button
               onClick={() => handleAddToCart(product)}
               disabled={!inStock}
-              className={`text-white px-4 py-2 rounded-lg transition ${inStock ? 'bg-black dark:bg-yellow-500 dark:text-black hover:bg-gray-800 dark:hover:bg-yellow-400 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}`}
+              className={`text-white px-4 py-2 rounded-lg transition ${inStock ? 'bg-blue-600 dark:bg-yellow-500 dark:text-black hover:bg-blue-700 dark:hover:bg-yellow-400 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}`}
             >
               Add To Cart
             </button>

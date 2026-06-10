@@ -14,12 +14,15 @@ export const ProductList = () => {
 const { searchQuery, category, sortBy, sale, new: isNew, instock } = useFilter();
  const [show, setShow] = useState(false);
  const [searchParams] = useSearchParams();
+
+ const [isLoading, setIsLoading] = useState(true);
  const [products, setProducts] = useState([]);
  const [filteredProducts, setFilteredProducts] = useState([]);
 
 useEffect(() => {
   async function fetchProducts() {
     try {
+    setIsLoading(true);
     const data = await getProductlist();
     setProducts(data);
     } catch (error) {
@@ -27,6 +30,8 @@ useEffect(() => {
         position: "top-right",
         autoClose: 3000,
       });
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -94,11 +99,22 @@ useEffect(() => {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
-            {filteredProducts.map((productlist) => (
-              <ProductCard key={productlist.id} product={productlist} />
-            ))}
-          </div>
+          {isLoading ? (
+            <div className="flex justify-center items-center py-20">
+              <h2 className="text-4xl text-gray-500 dark:text-gray-400 font-semibold mb-4 ">Loading products...</h2>
+              <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-600 dark:border-blue-400"></div>
+            </div>
+          ) : filteredProducts.length === 0 ? (
+            <div className="text-center py-20">
+              <p className="text-2xl text-gray-500 dark:text-gray-400 font-semibold">No products found 😢</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+              {filteredProducts.map((productlist) => (
+                <ProductCard key={productlist.id} product={productlist} />
+              ))}
+            </div>
+          )}
           { show && <FilterBar setShow={setShow} /> }
         </section>
     </div>
